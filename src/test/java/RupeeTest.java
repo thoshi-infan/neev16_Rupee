@@ -32,6 +32,18 @@ public class RupeeTest {
 
     }
 
+    @Test
+    public void shouldReturnFalseWhenRupeeIsNotSameType(){
+
+        Rupee tenRupee = new Rupee(10);
+        Object obj = new Object();
+
+        boolean check = tenRupee.equals(obj);
+
+        assertFalse(check);
+
+    }
+
 
 
 }
