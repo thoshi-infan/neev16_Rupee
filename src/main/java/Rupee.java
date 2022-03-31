@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Rupee {
     private final int value;
 
@@ -11,5 +13,10 @@ public class Rupee {
             return false;
         }
         return this.value == ((Rupee) obj).value;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
     }
 }
