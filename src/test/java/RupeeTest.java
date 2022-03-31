@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotSame;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class RupeeTest {
 
@@ -24,5 +23,15 @@ public class RupeeTest {
 
         assertTrue(check);
     }
+
+    @Test
+    public void shouldReturnTrueWhenRupeeIsNotNull(){
+
+        Rupee tenRupee = new Rupee(10);
+        assertNotNull(tenRupee);
+
+    }
+
+
 
 }
