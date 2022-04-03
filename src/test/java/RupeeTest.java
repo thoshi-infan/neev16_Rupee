@@ -11,6 +11,9 @@ public class RupeeTest {
         Rupee anotherTenRupee = new Rupee(10);
 
         assertNotSame(tenRupee, anotherTenRupee);
+
+        //assertSame - check if the object references pointing to the same object.
+        //assertEquals - check if the objects are equal.
     }
 
     @Test
@@ -28,8 +31,10 @@ public class RupeeTest {
     public void shouldReturnTrueWhenRupeeIsNotNull(){
 
         Rupee tenRupee = new Rupee(10);
+
         assertNotNull(tenRupee);
 
+        //Object is null or not.
     }
 
     @Test
@@ -41,9 +46,6 @@ public class RupeeTest {
         boolean check = tenRupee.equals(obj);
 
         assertFalse(check);
-
     }
-
-
 
 }

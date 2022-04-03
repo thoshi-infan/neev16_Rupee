@@ -6,3 +6,4 @@ settings.gradle
 .idea
 .gitignore.swp
 gradlew
+.DS_Store
